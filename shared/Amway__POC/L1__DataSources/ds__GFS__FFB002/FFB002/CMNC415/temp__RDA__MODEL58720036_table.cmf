@@ -1,5 +1,5 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<!-- salt:d177f5c6-8a9e-429b-a3aa-318709f417ee -->
+<!-- salt:bb83f5d0-e6da-421c-a82f-ab0252fab0db -->
 <metadata name="temp_RDA_MODEL58720036" path="/shared/Amway_POC/L1_DataSources/ds_GFS_FFB002/FFB002/CMNC415/temp_RDA_MODEL58720036" type="TABLE" subtype="DATABASE_TABLE" changeToken="0" tableType="TABLE">
   <columns>
     <column name="CORP_CD" nullable="false">
