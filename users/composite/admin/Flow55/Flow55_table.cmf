@@ -1,0 +1,173 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:1e9e51ea-1cbe-4eca-a8e8-70d473023707 -->
+<metadata name="Flow55" path="/users/composite/admin/Flow55/Flow55" type="TABLE" subtype="SQL_TABLE" changeToken="0" tableType="VIEW">
+  <columns>
+    <column name="L_ORDERKEY" nullable="true">
+      <datatype type="DECIMAL" maxDigits="10" maxFractionalDigits="0"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="L_PARTKEY" nullable="true">
+      <datatype type="DECIMAL" maxDigits="10" maxFractionalDigits="0"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="L_SUPPKEY" nullable="true">
+      <datatype type="DECIMAL" maxDigits="10" maxFractionalDigits="0"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="L_LINENUMERIC" nullable="true">
+      <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="L_QUANTITY" nullable="true">
+      <datatype type="DECIMAL" maxDigits="18" maxFractionalDigits="0"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="L_EXTENDEDPRICE" nullable="true">
+      <datatype type="DECIMAL" maxDigits="38" minFractionalDigits="2" maxFractionalDigits="2"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="L_DISCOUNT" nullable="true">
+      <datatype type="DECIMAL" maxDigits="38" minFractionalDigits="2" maxFractionalDigits="2"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="L_TAX" nullable="true">
+      <datatype type="DECIMAL" maxDigits="38" minFractionalDigits="2" maxFractionalDigits="2"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="L_RETURNFLAG" nullable="true">
+      <datatype type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="L_LINESTATUS" nullable="true">
+      <datatype type="STRING" minLength="1" maxLength="1"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="L_SHIPDATE" nullable="true">
+      <datatype type="DATE"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="L_COMMITDATE" nullable="true">
+      <datatype type="DATE"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="L_RECEIPTDATE" nullable="true">
+      <datatype type="DATE"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="L_SHIPINSTRUCT" nullable="true">
+      <datatype type="STRING" maxLength="25"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="L_SHIPMODE" nullable="true">
+      <datatype type="STRING" maxLength="10"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="L_COMMENT" nullable="true">
+      <datatype type="STRING" maxLength="44"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+  </columns>
+  <indexes></indexes>
+  <foreignKeys></foreignKeys>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <dependency target="/users/composite/admin/Business/BigSQLView" type="TABLE">
+    <datatype type="TABLE" refId="256">
+      <element name="L_ORDERKEY">
+        <datatype type="DECIMAL" maxDigits="10" maxFractionalDigits="0"/>
+      </element>
+      <element name="L_PARTKEY">
+        <datatype type="DECIMAL" maxDigits="10" maxFractionalDigits="0"/>
+      </element>
+      <element name="L_SUPPKEY">
+        <datatype type="DECIMAL" maxDigits="10" maxFractionalDigits="0"/>
+      </element>
+      <element name="L_LINENUMERIC">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="L_QUANTITY">
+        <datatype type="DECIMAL" maxDigits="18" maxFractionalDigits="0"/>
+      </element>
+      <element name="L_EXTENDEDPRICE">
+        <datatype type="DECIMAL" maxDigits="38" minFractionalDigits="2" maxFractionalDigits="2"/>
+      </element>
+      <element name="L_DISCOUNT">
+        <datatype type="DECIMAL" maxDigits="38" minFractionalDigits="2" maxFractionalDigits="2"/>
+      </element>
+      <element name="L_TAX">
+        <datatype type="DECIMAL" maxDigits="38" minFractionalDigits="2" maxFractionalDigits="2"/>
+      </element>
+      <element name="L_RETURNFLAG">
+        <datatype type="STRING" minLength="1" maxLength="1"/>
+      </element>
+      <element name="L_LINESTATUS">
+        <datatype type="STRING" minLength="1" maxLength="1"/>
+      </element>
+      <element name="L_SHIPDATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="L_COMMITDATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="L_RECEIPTDATE">
+        <datatype type="DATE"/>
+      </element>
+      <element name="L_SHIPINSTRUCT">
+        <datatype type="STRING" maxLength="25"/>
+      </element>
+      <element name="L_SHIPMODE">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="L_COMMENT">
+        <datatype type="STRING" maxLength="44"/>
+      </element>
+    </datatype>
+  </dependency>
+  <attribute name="SQL" type="STRING">SELECT BigSQLView.L_ORDERKEY,BigSQLView.L_PARTKEY,BigSQLView.L_SUPPKEY,BigSQLView.L_LINENUMERIC,BigSQLView.L_QUANTITY,BigSQLView.L_EXTENDEDPRICE,BigSQLView.L_DISCOUNT,BigSQLView.L_TAX,BigSQLView.L_RETURNFLAG,BigSQLView.L_LINESTATUS,BigSQLView.L_SHIPDATE,BigSQLView.L_COMMITDATE,BigSQLView.L_RECEIPTDATE,BigSQLView.L_SHIPINSTRUCT,BigSQLView.L_SHIPMODE,BigSQLView.L_COMMENT FROM /users/composite/admin/Business/BigSQLView AS BigSQLView</attribute>
+  <attribute name="creationDate" type="LONG">1614822165380</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="impactLevel" type="INTEGER">0</attribute>
+  <attribute name="impactMessage" type="NULL"/>
+  <attribute name="lastModifiedDate" type="LONG">1614822211053</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="model" type="NULL"/>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1614822165380</attribute>
+  <attribute name="ui_model" type="STRING">&quot;{}&quot;</attribute>
+</metadata>
