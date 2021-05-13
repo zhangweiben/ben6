@@ -1,7 +1,7 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<!-- salt:55cf6aa7-06fa-458a-8296-b5f3a56569a2 -->
+<!-- salt:32509327-9f2f-4e41-90c2-344c5d4bcb47 -->
 <metadata name="LookupProduct" path="/shared/examples/LookupProduct" type="PROCEDURE" subtype="SQL_SCRIPT_PROCEDURE" changeToken="0">
-  <annotation><![CDATA[hello, Ben]]></annotation>
+  <annotation><![CDATA[hello, Ben1]]></annotation>
   <parameters>
     <parameter name="desiredProduct" direction="IN" nullable="true">
       <datatype name="INTEGER" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
@@ -83,7 +83,7 @@ END</attribute>
   <attribute name="creatorUserDomain" type="STRING"/>
   <attribute name="creatorUserName" type="STRING"/>
   <attribute name="explicitly.designed" type="BOOLEAN">false</attribute>
-  <attribute name="lastModifiedDate" type="LONG">1620864305546</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1620884619291</attribute>
   <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
   <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
   <attribute name="license" type="NULL"/>
