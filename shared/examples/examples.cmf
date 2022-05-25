@@ -1,7 +1,7 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<!-- salt:1b13ad84-ea23-4b46-83da-6e8ce51f156b -->
+<!-- salt:39c773c0-4d3c-4029-a6a3-75c7e5931f85 -->
 <metadata name="examples" path="/shared/examples" type="CONTAINER" subtype="FOLDER" changeToken="0">
-  <annotation><![CDATA[This folder contains pre-created resources.ddddddddddddfff]]></annotation>
+  <annotation><![CDATA[This folder contains pre-created resources.ddddddddddddfffeee]]></annotation>
   <security>
     <owner user="admin" domain="composite"/>
     <privilege group="all" domain="composite" privileges="READ EXECUTE SELECT"/>
@@ -9,7 +9,7 @@
   <attribute name="creationDate" type="LONG">0</attribute>
   <attribute name="creatorUserDomain" type="STRING"/>
   <attribute name="creatorUserName" type="STRING"/>
-  <attribute name="lastModifiedDate" type="LONG">1653508753934</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1653508843668</attribute>
   <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
   <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
   <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
