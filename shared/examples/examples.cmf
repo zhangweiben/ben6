@@ -1,7 +1,7 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<!-- salt:b743408b-1fb4-4693-80c6-626a12705924 -->
+<!-- salt:53d281db-c3d5-4cc2-aa10-382871df9a99 -->
 <metadata name="examples" path="/shared/examples" type="CONTAINER" subtype="FOLDER" changeToken="0">
-  <annotation><![CDATA[This folder contains pre-created resources.dddddddddddd]]></annotation>
+  <annotation><![CDATA[This folder contains pre-created resources.ddddddd]]></annotation>
   <security>
     <owner user="admin" domain="composite"/>
     <privilege group="all" domain="composite" privileges="READ EXECUTE SELECT"/>
@@ -9,8 +9,8 @@
   <attribute name="creationDate" type="LONG">0</attribute>
   <attribute name="creatorUserDomain" type="STRING"/>
   <attribute name="creatorUserName" type="STRING"/>
-  <attribute name="lastModifiedDate" type="LONG">1653498847357</attribute>
-  <attribute name="lastModifiedUserDomain" type="STRING">bentdv1</attribute>
-  <attribute name="lastModifiedUserId" type="INTEGER">250101</attribute>
-  <attribute name="lastModifiedUserName" type="STRING">wzhang@tibco.com</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1653504857465</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
 </metadata>

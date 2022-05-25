@@ -1,5 +1,5 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<!-- salt:55cf6aa7-06fa-458a-8296-b5f3a56569a2 -->
+<!-- salt:53d281db-c3d5-4cc2-aa10-382871df9a99 -->
 <metadata name="ds_orders" path="/shared/examples/ds_orders" type="DATA_SOURCE" subtype="RELATIONAL" changeToken="0">
   <security>
     <owner user="admin" domain="composite"/>
@@ -43,8 +43,9 @@
   <attribute name="execTimeout" type="INTEGER">0</attribute>
   <attribute name="healthmonitortable" type="STRING"/>
   <attribute name="isPassThrough" type="STRING">Disabled</attribute>
-  <attribute name="lastModifiedDate" type="LONG">1620861491126</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1653504857465</attribute>
   <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
   <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
   <attribute name="login" type="STRING">tutorial</attribute>
   <attribute name="maxNumberForOrSyntax" type="INTEGER">2147483647</attribute>
@@ -53,7 +54,7 @@
   <attribute name="minTargetToSourceRatioForSJ" type="STRING"/>
   <attribute name="name" type="STRING">ds_orders</attribute>
   <attribute name="nativeDataLoadingEnabled" type="BOOLEAN">true</attribute>
-  <attribute name="password" type="PASSWORD_STRING">ENC(7H7/uJRmumE1MD0tI3rQTA==$E+AC7CpLWknern2VlAbLBg==)</attribute>
+  <attribute name="password" type="PASSWORD_STRING">ENC(oOctwHjJ2X6kNwtVN1Jb0w==$ds90UwmTQYZD7MAeoSks/A==)</attribute>
   <attribute name="patternSeparator" type="STRING">,</attribute>
   <attribute name="persistPassword" type="BOOLEAN">true</attribute>
   <attribute name="postgresqlEnableBulkLoad" type="BOOLEAN">true</attribute>

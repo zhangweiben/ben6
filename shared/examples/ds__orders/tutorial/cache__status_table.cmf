@@ -1,5 +1,5 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<!-- salt:55cf6aa7-06fa-458a-8296-b5f3a56569a2 -->
+<!-- salt:53d281db-c3d5-4cc2-aa10-382871df9a99 -->
 <metadata name="cache_status" path="/shared/examples/ds_orders/tutorial/cache_status" type="TABLE" subtype="DATABASE_TABLE" changeToken="0" tableType="TABLE">
   <columns>
     <column name="clusterid" nullable="true">
@@ -96,8 +96,9 @@
   <attribute name="creationDate" type="LONG">0</attribute>
   <attribute name="creatorUserDomain" type="STRING"/>
   <attribute name="creatorUserName" type="STRING"/>
-  <attribute name="lastModifiedDate" type="LONG">1620861491126</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1653504857465</attribute>
   <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
   <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
   <attribute name="selectionState" type="INTEGER">2</attribute>
 </metadata>

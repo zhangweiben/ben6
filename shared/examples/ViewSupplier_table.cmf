@@ -1,5 +1,5 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<!-- salt:55cf6aa7-06fa-458a-8296-b5f3a56569a2 -->
+<!-- salt:53d281db-c3d5-4cc2-aa10-382871df9a99 -->
 <metadata name="ViewSupplier" path="/shared/examples/ViewSupplier" type="TABLE" subtype="SQL_TABLE" changeToken="0" tableType="NONE">
   <columns>
     <column name="ProductID" nullable="true">
