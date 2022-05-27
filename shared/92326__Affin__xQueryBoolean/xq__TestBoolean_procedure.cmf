@@ -1,0 +1,186 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:f3428679-f726-49f7-8535-28d16623eccf -->
+<metadata name="xq_TestBoolean" path="/shared/92326_Affin_xQueryBoolean/xq_TestBoolean" type="PROCEDURE" subtype="XQUERY_TRANSFORM_PROCEDURE" changeToken="0">
+  <parameters>
+    <parameter name="TestBoolean" direction="OUT" nullable="true">
+      <datatype name="TestBoolean" namespace="http://www.compositesw.com/services/webservices/system/admin/resource" referenceDefinitionSet="/shared/92326_Affin_xQueryBoolean/TestBooleanDefSet" referenceType="{http://www.compositesw.com/services/webservices/system/admin/resource}TestBoolean" subType="ELEMENT_DECL" type="XML" contentConstraint="SEQUENCE" schemaConstraint="ANY" componentType="ELEMENT" componentName="{http://www.compositesw.com/services/webservices/system/admin/resource}TestBoolean">
+        <schemaDatatype>
+          <datatype name="TestBoolean" namespace="http://www.compositesw.com/services/webservices/system/admin/resource" superTypeName="anyType" superTypeNamespace="http://www.w3.org/2001/XMLSchema" subType="ELEMENT_DECL" anonymous="true" type="TREE" refId="257">
+            <element name="TestBool" namespace="http://www.compositesw.com/services/webservices/system/admin/resource">
+              <datatype superTypeName="anyType" superTypeNamespace="http://www.w3.org/2001/XMLSchema" subType="COMPLEX_TYPE" type="TREE" refId="513">
+                <element name="Name" namespace="http://www.compositesw.com/services/webservices/system/admin/resource">
+                  <datatype name="string" namespace="http://www.w3.org/2001/XMLSchema" superTypeName="anySimpleType" superTypeNamespace="http://www.w3.org/2001/XMLSchema" type="STRING" maxLength="2147483647"/>
+                </element>
+                <element name="Bool" namespace="http://www.compositesw.com/services/webservices/system/admin/resource">
+                  <datatype name="boolean" namespace="http://www.w3.org/2001/XMLSchema" superTypeName="anySimpleType" superTypeNamespace="http://www.w3.org/2001/XMLSchema" type="BOOLEAN"/>
+                </element>
+              </datatype>
+            </element>
+          </datatype>
+        </schemaDatatype>
+      </datatype>
+    </parameter>
+  </parameters>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <dependency target="/shared/92326_Affin_xQueryBoolean/TestBooleanDefSet" type="DEFINITION_SET">
+    <datatype name="Tree" type="TREE" refId="257"></datatype>
+  </dependency>
+  <dependency target="/shared/92326_Affin_xQueryBoolean/p_BooleanDataSource" type="PROCEDURE">
+    <datatype name="Tree" type="TREE" refId="257"></datatype>
+  </dependency>
+  <attribute name="creationDate" type="LONG">1594248060441</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="explicitly.designed" type="BOOLEAN">true</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1650510013975</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1594248060441</attribute>
+  <attribute name="transformModel" type="NULL"/>
+  <attribute name="xquery" type="STRING">declare copy-namespaces no-preserve,inherit;
+declare namespace ns1=&quot;http://www.compositesw.com/services/webservices/system/admin/resource&quot;;
+declare namespace ns2=&quot;http://www.w3.org/2001/XMLSchema&quot;;
+
+&lt;root xmlns:ns2=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;{
+  let $nodes := (
+    element ns1:TestBoolean {
+      let $nodes := (
+        let $query := &quot;select name,bool from /shared/&quot;&quot;92326_Affin_xQueryBoolean&quot;&quot;/p_BooleanDataSource()&quot;
+        for $p_BooleanDataSource in composite:executeQuery($query)//result
+        return
+        element ns1:TestBool {
+          element ns1:Name {$p_BooleanDataSource/name/text()},
+          element ns1:Bool {$p_BooleanDataSource/bool/text()}
+        }
+      )
+      return
+      $nodes[1]
+    }
+  )
+  return
+  $nodes[1]
+}&lt;/root&gt;/ns1:TestBoolean</attribute>
+  <attribute name="xqueryModel" type="STRING">
+&lt;xqueryModel customized=&quot;false&quot; version=&quot;new&quot;&gt;
+  &lt;rootNode&gt;
+    &lt;nodeType&gt;COMPLEX&lt;/nodeType&gt;
+    &lt;element name=&quot;TestBoolean&quot; namespace=&quot;http://www.compositesw.com/services/webservices/system/admin/resource&quot;&gt;
+      &lt;datatype name=&quot;TestBoolean&quot; namespace=&quot;http://www.compositesw.com/services/webservices/system/admin/resource&quot; referenceDefinitionSet=&quot;/shared/92326_Affin_xQueryBoolean/TestBooleanDefSet&quot; referenceType=&quot;{http://www.compositesw.com/services/webservices/system/admin/resource}TestBoolean&quot; subType=&quot;ELEMENT_DECL&quot; type=&quot;XML&quot; contentConstraint=&quot;SEQUENCE&quot; schemaConstraint=&quot;ANY&quot; componentType=&quot;ELEMENT&quot; componentName=&quot;{http://www.compositesw.com/services/webservices/system/admin/resource}TestBoolean&quot;&gt;
+        &lt;schemaDatatype&gt;
+          &lt;datatype name=&quot;TestBoolean&quot; namespace=&quot;http://www.compositesw.com/services/webservices/system/admin/resource&quot; superTypeName=&quot;anyType&quot; superTypeNamespace=&quot;http://www.w3.org/2001/XMLSchema&quot; subType=&quot;ELEMENT_DECL&quot; anonymous=&quot;true&quot; type=&quot;TREE&quot; refId=&quot;1&quot;&gt;
+            &lt;element name=&quot;TestBool&quot; namespace=&quot;http://www.compositesw.com/services/webservices/system/admin/resource&quot;&gt;
+              &lt;datatype superTypeName=&quot;anyType&quot; superTypeNamespace=&quot;http://www.w3.org/2001/XMLSchema&quot; subType=&quot;COMPLEX_TYPE&quot; type=&quot;TREE&quot; refId=&quot;2&quot;&gt;
+                &lt;element name=&quot;Name&quot; namespace=&quot;http://www.compositesw.com/services/webservices/system/admin/resource&quot;&gt;
+                  &lt;datatype name=&quot;string&quot; namespace=&quot;http://www.w3.org/2001/XMLSchema&quot; superTypeName=&quot;anySimpleType&quot; superTypeNamespace=&quot;http://www.w3.org/2001/XMLSchema&quot; type=&quot;STRING&quot; maxLength=&quot;2147483647&quot;/&gt;
+                &lt;/element&gt;
+                &lt;element name=&quot;Bool&quot; namespace=&quot;http://www.compositesw.com/services/webservices/system/admin/resource&quot;&gt;
+                  &lt;datatype name=&quot;boolean&quot; namespace=&quot;http://www.w3.org/2001/XMLSchema&quot; superTypeName=&quot;anySimpleType&quot; superTypeNamespace=&quot;http://www.w3.org/2001/XMLSchema&quot; type=&quot;INTEGER&quot; minValue=&quot;0&quot; maxValue=&quot;1&quot;/&gt;
+                &lt;/element&gt;
+              &lt;/datatype&gt;
+            &lt;/element&gt;
+          &lt;/datatype&gt;
+        &lt;/schemaDatatype&gt;
+      &lt;/datatype&gt;
+    &lt;/element&gt;
+    &lt;sourcePath/&gt;
+    &lt;sourceType/&gt;
+    &lt;sourceSignature/&gt;
+    &lt;sourceAlias/&gt;
+    &lt;sourceJoin/&gt;
+    &lt;sourceFilter&gt;
+      &lt;text/&gt;
+    &lt;/sourceFilter&gt;
+    &lt;sourceSortOrder/&gt;
+    &lt;sourceGroupBy/&gt;
+    &lt;sourceInputs/&gt;
+    &lt;childNodes&gt;
+      &lt;childNode&gt;
+        &lt;nodeType&gt;COMPLEX&lt;/nodeType&gt;
+        &lt;element name=&quot;TestBool&quot; namespace=&quot;http://www.compositesw.com/services/webservices/system/admin/resource&quot;&gt;
+          &lt;datatype superTypeName=&quot;anyType&quot; superTypeNamespace=&quot;http://www.w3.org/2001/XMLSchema&quot; subType=&quot;COMPLEX_TYPE&quot; type=&quot;TREE&quot; refId=&quot;1&quot;&gt;
+            &lt;element name=&quot;Name&quot; namespace=&quot;http://www.compositesw.com/services/webservices/system/admin/resource&quot;&gt;
+              &lt;datatype name=&quot;string&quot; namespace=&quot;http://www.w3.org/2001/XMLSchema&quot; superTypeName=&quot;anySimpleType&quot; superTypeNamespace=&quot;http://www.w3.org/2001/XMLSchema&quot; type=&quot;STRING&quot; maxLength=&quot;2147483647&quot;/&gt;
+            &lt;/element&gt;
+            &lt;element name=&quot;Bool&quot; namespace=&quot;http://www.compositesw.com/services/webservices/system/admin/resource&quot;&gt;
+              &lt;datatype name=&quot;boolean&quot; namespace=&quot;http://www.w3.org/2001/XMLSchema&quot; superTypeName=&quot;anySimpleType&quot; superTypeNamespace=&quot;http://www.w3.org/2001/XMLSchema&quot; type=&quot;INTEGER&quot; minValue=&quot;0&quot; maxValue=&quot;1&quot;/&gt;
+            &lt;/element&gt;
+          &lt;/datatype&gt;
+        &lt;/element&gt;
+        &lt;sourcePath&gt;/shared/92326_Affin_xQueryBoolean/p_BooleanDataSource&lt;/sourcePath&gt;
+        &lt;sourceType&gt;PROCEDURE&lt;/sourceType&gt;
+        &lt;sourceSignature&gt;
+          &lt;datatype type=&quot;PROCEDURE&quot; refId=&quot;1&quot;&gt;
+            &lt;element name=&quot;data&quot; direction=&quot;OUT&quot;&gt;
+              &lt;datatype name=&quot;data&quot; type=&quot;TABLE&quot; refId=&quot;2&quot;&gt;
+                &lt;element name=&quot;name&quot;&gt;
+                  &lt;datatype name=&quot;VARCHAR&quot; type=&quot;STRING&quot; maxLength=&quot;50&quot;/&gt;
+                &lt;/element&gt;
+                &lt;element name=&quot;bool&quot;&gt;
+                  &lt;datatype name=&quot;BOOLEAN&quot; type=&quot;BOOLEAN&quot;/&gt;
+                &lt;/element&gt;
+              &lt;/datatype&gt;
+            &lt;/element&gt;
+          &lt;/datatype&gt;
+        &lt;/sourceSignature&gt;
+        &lt;sourceAlias&gt;p_BooleanDataSource&lt;/sourceAlias&gt;
+        &lt;sourceJoin&gt;
+          &lt;joinType&gt;CROSS&lt;/joinType&gt;
+          &lt;joinExpression/&gt;
+        &lt;/sourceJoin&gt;
+        &lt;sourceFilter&gt;
+          &lt;text/&gt;
+        &lt;/sourceFilter&gt;
+        &lt;sourceSortOrder/&gt;
+        &lt;sourceGroupBy/&gt;
+        &lt;sourceInputs/&gt;
+        &lt;childNodes&gt;
+          &lt;childNode&gt;
+            &lt;nodeType&gt;SIMPLE&lt;/nodeType&gt;
+            &lt;element name=&quot;Name&quot; namespace=&quot;http://www.compositesw.com/services/webservices/system/admin/resource&quot;&gt;
+              &lt;datatype name=&quot;string&quot; namespace=&quot;http://www.w3.org/2001/XMLSchema&quot; superTypeName=&quot;anySimpleType&quot; superTypeNamespace=&quot;http://www.w3.org/2001/XMLSchema&quot; type=&quot;STRING&quot; maxLength=&quot;2147483647&quot;/&gt;
+            &lt;/element&gt;
+            &lt;value&gt;$p_BooleanDataSource/name/text()&lt;/value&gt;
+          &lt;/childNode&gt;
+          &lt;childNode&gt;
+            &lt;nodeType&gt;SIMPLE&lt;/nodeType&gt;
+            &lt;element name=&quot;Bool&quot; namespace=&quot;http://www.compositesw.com/services/webservices/system/admin/resource&quot;&gt;
+              &lt;datatype name=&quot;boolean&quot; namespace=&quot;http://www.w3.org/2001/XMLSchema&quot; superTypeName=&quot;anySimpleType&quot; superTypeNamespace=&quot;http://www.w3.org/2001/XMLSchema&quot; type=&quot;INTEGER&quot; minValue=&quot;0&quot; maxValue=&quot;1&quot;/&gt;
+            &lt;/element&gt;
+            &lt;value&gt;$p_BooleanDataSource/bool/text()&lt;/value&gt;
+          &lt;/childNode&gt;
+        &lt;/childNodes&gt;
+      &lt;/childNode&gt;
+    &lt;/childNodes&gt;
+  &lt;/rootNode&gt;
+  &lt;inputSignature&gt;
+    &lt;datatype type=&quot;PROCEDURE&quot; refId=&quot;1&quot;&gt;&lt;/datatype&gt;
+  &lt;/inputSignature&gt;
+  &lt;xquery&gt;declare copy-namespaces no-preserve,inherit;
+declare namespace ns1=&amp;quot;http://www.compositesw.com/services/webservices/system/admin/resource&amp;quot;;
+declare namespace ns2=&amp;quot;http://www.w3.org/2001/XMLSchema&amp;quot;;
+
+&amp;lt;root xmlns:ns2=&amp;quot;http://www.w3.org/2001/XMLSchema&amp;quot;&amp;gt;{
+  let $nodes := (
+    element ns1:TestBoolean {
+      let $nodes := (
+        let $query := &amp;quot;select name,bool from /shared/&amp;quot;&amp;quot;92326_Affin_xQueryBoolean&amp;quot;&amp;quot;/p_BooleanDataSource()&amp;quot;
+        for $p_BooleanDataSource in composite:executeQuery($query)//result
+        return
+        element ns1:TestBool {
+          element ns1:Name {$p_BooleanDataSource/name/text()},
+          element ns1:Bool {$p_BooleanDataSource/bool/text()}
+        }
+      )
+      return
+      $nodes[1]
+    }
+  )
+  return
+  $nodes[1]
+}&amp;lt;/root&amp;gt;/ns1:TestBoolean&lt;/xquery&gt;
+&lt;/xqueryModel&gt;</attribute>
+</metadata>

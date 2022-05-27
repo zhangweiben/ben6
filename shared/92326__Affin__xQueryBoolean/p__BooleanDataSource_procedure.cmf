@@ -1,0 +1,36 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:f3428679-f726-49f7-8535-28d16623eccf -->
+<metadata name="p_BooleanDataSource" path="/shared/92326_Affin_xQueryBoolean/p_BooleanDataSource" type="PROCEDURE" subtype="SQL_SCRIPT_PROCEDURE" changeToken="0">
+  <parameters>
+    <parameter name="data" direction="OUT" nullable="true">
+      <datatype name="data" type="TABLE" refId="256">
+        <element name="name">
+          <datatype name="VARCHAR" type="STRING" maxLength="50"/>
+        </element>
+        <element name="bool">
+          <datatype name="BOOLEAN" type="BOOLEAN"/>
+        </element>
+      </datatype>
+    </parameter>
+  </parameters>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <attribute name="Script" type="STRING">PROCEDURE p_BooleanDataSource(OUT data pipe(name VARCHAR(50), bool BOOLEAN))
+BEGIN
+  insert into data (name, bool) values (&apos;firstname&apos;, true);
+END</attribute>
+  <attribute name="creationDate" type="LONG">1594247234425</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="explicitly.designed" type="BOOLEAN">false</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1594247885670</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="model" type="NULL"/>
+  <attribute name="native_only" type="STRING">false</attribute>
+  <attribute name="references" type="NULL"/>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1594247234425</attribute>
+</metadata>
