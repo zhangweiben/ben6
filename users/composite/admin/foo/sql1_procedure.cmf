@@ -1,7 +1,6 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<!-- salt:6e1b0044-6305-4763-b1d6-3025b7d4e0a1 -->
+<!-- salt:e54f2319-5d0b-4545-92c5-11ae9c521408 -->
 <metadata name="sql1" path="/users/composite/admin/foo/sql1" type="PROCEDURE" subtype="SQL_SCRIPT_PROCEDURE" changeToken="0">
-  <annotation><![CDATA[rrr]]></annotation>
   <parameters></parameters>
   <security>
     <owner user="admin" domain="composite"/>
@@ -14,14 +13,12 @@ END</attribute>
   <attribute name="creatorUserDomain" type="STRING">composite</attribute>
   <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
   <attribute name="creatorUserName" type="STRING">admin</attribute>
-  <attribute name="explicitly.designed" type="BOOLEAN">false</attribute>
   <attribute name="impactLevel" type="INTEGER">0</attribute>
-  <attribute name="lastModifiedDate" type="LONG">1653866320908</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1653868378128</attribute>
   <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
   <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
   <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
   <attribute name="model" type="NULL"/>
-  <attribute name="native_only" type="STRING">false</attribute>
   <attribute name="references" type="NULL"/>
   <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1653865396265</attribute>
 </metadata>
