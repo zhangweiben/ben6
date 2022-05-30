@@ -1,0 +1,24 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:68332f23-6fa0-39be-b339-8cfb172fa6b8 -->
+<metadata name="sql1" path="/users/composite/admin/ddddw/sql1" type="PROCEDURE" subtype="SQL_SCRIPT_PROCEDURE" changeToken="0">
+  <parameters></parameters>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <attribute name="Script" type="STRING">PROCEDURE sql1()
+BEGIN
+  -- Add your code here
+END</attribute>
+  <attribute name="creationDate" type="LONG">1653930151929</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="impactLevel" type="INTEGER">0</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1653930151929</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="model" type="NULL"/>
+  <attribute name="references" type="NULL"/>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1653930151929</attribute>
+</metadata>
